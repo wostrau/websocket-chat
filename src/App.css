@@ -4,8 +4,15 @@
 
 .App {
     text-align: center;
+    width: 500px;
+    margin: 0 auto;
 }
 
 .message img {
     width: 50px;
+}
+
+.messages {
+    height: 400px;
+    overflow-y: auto;
 }
