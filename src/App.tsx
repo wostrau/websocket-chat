@@ -9,7 +9,7 @@ type userType = {
 }
 
 export const App: React.FC = () => {
-    const messagesBlockRef = useRef()
+    const messagesBlockRef = useRef<HTMLDivElement | null>(null)
     const [message, setMessage] = useState<string>('')
     const [webSocket, setWebSocket] = useState<null | WebSocket>(null)
     if (webSocket) {
